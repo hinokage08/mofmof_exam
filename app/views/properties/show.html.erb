@@ -1,7 +1,5 @@
-<% @properties.each do |property| %>
-物件名: <%= property.property_name %>
-<p>賃料:<%= property.rent %>円</p>
-<p>住所:<%= property.address %></p>
-<p>築年数:<%= property.age %>年</p>
-<p>備考:<%= property.remarks %></p>
-<% end %>
+物件名: <%= @property.property_name %>
+<p>賃料:<%= @property.rent %>円</p>
+<p>住所:<%= @property.address %></p>
+<p>築年数:<%= @property.age %>年</p>
+<p>備考:<%= @property.remarks %></p>

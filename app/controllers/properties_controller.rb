@@ -12,8 +12,13 @@ class PropertiesController < ApplicationController
     redirect_to new_property_path
   end
 
+  def show
+    @property = Property.find(params[:id])
+  end
+
   private
   def property_params
     params.require(:property).permit(:property_name, :address, :rent, :age, :remarks)
   end
+
 end
