@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191019080408) do
+ActiveRecord::Schema.define(version: 20191021020152) do
+
+  create_table "nearest_stations", force: :cascade do |t|
+    t.string  "route_name"
+    t.string  "station_name"
+    t.integer "required_time"
+  end
 
   create_table "properties", force: :cascade do |t|
     t.string  "property_name"
