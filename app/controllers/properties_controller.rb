@@ -24,6 +24,7 @@ class PropertiesController < ApplicationController
 
   def edit
     @property = Property.find(params[:id])
+    @nearest_station = @property.nearest_stations
   end
 
   def update
