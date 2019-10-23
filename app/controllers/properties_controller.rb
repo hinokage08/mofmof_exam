@@ -23,6 +23,7 @@ class PropertiesController < ApplicationController
   end
 
   def edit
+    2.times { @property.nearest_stations.build }
     @nearest_station = @property.nearest_stations
   end
 

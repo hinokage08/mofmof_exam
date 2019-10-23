@@ -1,14 +1,18 @@
-物件名: <%= @property.property_name %>
-<p>賃料:<%= @property.rent %>円</p>
-<p>住所:<%= @property.address %></p>
-<p>築年数:<%= @property.age %>年</p>
-<p>備考:<%= @property.remarks %></p>
-
- <% @nearest_station.each_with_index do |property,i| %>
+<div class="property">
+  <p>物件名: <%= @property.property_name %></p>
+  <p>賃料: <%= @property.rent %>円</p>
+  <p>住所: <%= @property.address %></p>
+  <p>築年数: <%= @property.age %>年</p>
+  <p>備考: <%= @property.remarks %></p>
+</div>
+<div class="nearest_stations">
+  <% @nearest_station.each_with_index do |property,i| %>
   <h3>最寄り駅<%= i+1 %></h3>
- <p>路線名:<%= property.route_name %></p>
- <p>駅名:<%= property.station_name %></p>
- <p>所用分数:<%= property.required_time %>分</p>
- <% end %>
+  <p>路線名: <%= property.route_name %></p>
+  <p>駅名: <%= property.station_name %></p>
+  <p>所用分数: <%= property.required_time %>分</p>
+  <% end %>
+</div>
 <%= link_to '編集', edit_property_path %>
+|
 <%= link_to '戻る', properties_path %>

@@ -2,35 +2,43 @@ h2 {
   margin-bottom: 5px;
 }
 
+table {
+  padding-bottom: 40px;
+}
 
-.property_name {
+p {
+  margin: 0;
+}
+
+
+.th_property_name {
   width: 70px;
 }
 
-.rent {
+.th_rent {
   width: 60px;
 }
 
-.address {
+.th_address {
   width: 120px;
 }
 
-.age {
+.th_age {
   width: 35px;
 }
 
-.remarks {
+.th_remarks {
   width: 900px;
 }
 
-.show_link {
+.th_show_link {
   width: 20px;
 }
 
-.edit_link {
+.th_edit_link {
   width: 20px;
 }
 
-.delete_link {
+.th_delete_link {
   width: 20px;
 }
