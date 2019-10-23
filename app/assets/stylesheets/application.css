@@ -17,3 +17,19 @@
 p {
   margin: 0;
 }
+
+.property_name {
+  width: 70px;
+}
+
+.rent {
+  width: 60px;
+}
+
+.address {
+  width: 120px;
+}
+
+.age {
+  width: 35px;
+}
