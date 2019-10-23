@@ -36,6 +36,12 @@ class PropertiesController < ApplicationController
     end
   end
 
+  def destroy
+    @property = Property.find(params[:id])
+    @property.destroy
+    redirect_to properties_path, notice:"物件を削除しました"
+  end
+
   private
   def property_params
     params.require(:property).permit(:property_name, :address, :rent, :age, :remarks, nearest_stations_attributes: [:id, :route_name, :station_name, :required_time])
