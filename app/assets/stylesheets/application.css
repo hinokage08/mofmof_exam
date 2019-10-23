@@ -33,3 +33,15 @@ p {
 .age {
   width: 35px;
 }
+
+.show_link {
+  width: 20px;
+}
+
+.edit_link {
+  width: 20px;
+}
+
+.delete_link {
+  width: 20px;
+}
