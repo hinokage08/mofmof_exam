@@ -1,0 +1,2 @@
+class NearestStasionsController < ApplicationController
+end
