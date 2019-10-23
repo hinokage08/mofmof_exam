@@ -18,30 +18,12 @@ p {
   margin: 0;
 }
 
-.property_name {
-  width: 70px;
+
+.container-fluid {
+  width: 100%;
+  margin: 30px;
 }
 
-.rent {
-  width: 60px;
-}
-
-.address {
-  width: 120px;
-}
-
-.age {
-  width: 35px;
-}
-
-.show_link {
-  width: 20px;
-}
-
-.edit_link {
-  width: 20px;
-}
-
-.delete_link {
-  width: 20px;
+table {
+  margin: 0 ;
 }
